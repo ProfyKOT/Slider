@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="slider.js"></script>
+	<link rel="stylesheet" type="text/css" href="slider.css">
+	<title>Slider</title>
+</head>
+<body>
+	<div class="sliderMainBlock" onmouseenter="clearTimeout(nextSlideTimer)" onmouseleave="setTimeout(slideTransition,settings.speed,clearTimeout(nextSlideTimer))">
+	<div class="sliderElement" style="background-color:gray">Первый слайд</div>
+	<div class="sliderElement" style="background-color:gray">Второй слайд</div>
+	<div class="sliderElement" style="background-color:gray">Третий слайд</div>
+	<div class="sliderElement" style="background-color:gray">Четвертый слайд</div>
+	<div class="sliderElement" style="background-color:gray">Пятый слайд</div>
+	<button class="prev-button" onclick="slideTransition(clearTimeout(nextSlideTimer), true)">Назад</button>
+	<button class="next-button" onclick="slideTransition(clearTimeout(nextSlideTimer),false)">Вперед</button>
+	</div>
+	
+
+</body>
+</html>
